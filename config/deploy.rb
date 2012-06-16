@@ -1,5 +1,5 @@
 require "rvm/capistrano"                  # Load RVM's capistrano plugin.
-set :application, "emmapace"
+set :application, "emmapace.it"
 set :repository,  "git@github.com:gicappa/emmapace.it.git"
 
 set :scm, :git
