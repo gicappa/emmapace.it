@@ -33,4 +33,13 @@ role :db,  "giankavh", :primary => true # This is where Rails migrations will ru
    task :restart, :roles => :app, :except => { :no_release => true } do
      run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
    end
+
+   desc "Installs required gems"
+   task :gems, :roles => :app do
+     run "cd #{current_path} && rake gems:install RAILS_ENV=production"
+   end
+
+   after "deploy:setup", "deploy:gems"
+   before "deploy", "deploy:web:disable"
+   after "deploy", "deploy:web:enable"
  end
