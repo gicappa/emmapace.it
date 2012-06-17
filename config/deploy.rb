@@ -13,6 +13,11 @@ set :git_shallow_clone, 1
 set :deploy_to, "/srv/www/emmapace.it/htdocs"
 
 set :use_sudo, false
+set :rvm_ruby_string, 'ruby-1.9.2-p290'        # Or whatever env you want it to run in.
+#set :rvm_type, :system  # Copy the exact line. I really mean :user here
+#set :rvm_type, :user  # Copy the exact line. I really mean :user here
+
+set :normalize_asset_timestamps, false
 
 role :web, "giankavh"                          # Your HTTP server, Apache/etc
 role :app, "giankavh"                          # This may be the same as your `Web` server
