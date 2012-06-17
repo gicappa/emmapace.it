@@ -1,6 +1,6 @@
 require "rvm/capistrano"                  # Load RVM's capistrano plugin.
 
-#$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
 
 set :application, "emmapace.it"
 set :repository,  "git@github.com:gicappa/emmapace.it.git"
