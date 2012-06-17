@@ -1,3 +1,7 @@
+require "rvm/capistrano"                  # Load RVM's capistrano plugin.
+
+#$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+
 set :application, "emmapace.it"
 set :repository,  "git@github.com:gicappa/emmapace.it.git"
 
@@ -23,8 +27,6 @@ role :web, "giankavh"                          # Your HTTP server, Apache/etc
 role :app, "giankavh"                          # This may be the same as your `Web` server
 role :db,  "giankavh", :primary => true # This is where Rails migrations will run
 
-# if you want to clean up old releases on each deploy uncomment this:
-# after "deploy:restart", "deploy:cleanup"
 
 # If you are using Passenger mod_rails uncomment this:
  namespace :deploy do
