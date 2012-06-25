@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Htdocs::Application.load_tasks
+PrivateLife::Application.load_tasks
