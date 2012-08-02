@@ -1,3 +1,58 @@
-<% @photos.each do |photo| %>
-<%= image_tag photo %>
-<% end %>
+<%# @photos.each do |photo| %>
+<%#= image_tag photo %>
+<%# end %>
+<style type="text/css" media="screen">
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial,sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	color: white;
+}
+	.emotional {
+		width: 95%;
+
+				float: left;
+	}
+	.emotional img {
+		float: right;
+		width: 40%;
+		height: 40%;
+	}
+	.emotional p {
+		float: right;
+		margin-right: 20px;
+		margin-top: 0;
+		width: 20%;
+
+		background-color: rgba(0, 0, 0, 0.5);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		padding: 20px;
+	}
+</style>
+
+<div class="emotional">
+		<%= image_tag 'emma_uno.jpg' %>
+		<p>
+			Carissima Emma,<br/>
+			Tanti Auguri per il tuo primo compleanno. 
+			Non riesco ad esprimere la gioia di averti incontrato nelle nostre 
+			vite se non ricordando la bellissima strada che abbiamo percorso insieme.
+			E quel minuscolo piedino, di pelle nuova è già un po' cresciuto.
+			Rigardando le tue prime fotografie e mi rendo conto di quanto preziosi siano
+			questi momenti insieme e di come fuggano galoppando e ruggendo alla vita
+			proprio come il leoncino che sei.<br/><br/>
+			Carissima Emma,<br/>
+			Ti auguro un mondo di felicità per il tuo primo compleanno 
+			e non vedo l'ora di passare tanta vita insieme a te e alla mamma.<br/>
+			Un enorme bacio.<br/><br/> 
+			Il tuo papà.<br/>
+			
+		</p>
+
+</div>
+
