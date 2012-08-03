@@ -22,6 +22,7 @@ gem 'jquery-rails'
 gem 'capistrano'
 gem 'rvm-capistrano'
 gem 'devise'
+
 gem 'flickraw'
 
 gem 'rspec-rails'
